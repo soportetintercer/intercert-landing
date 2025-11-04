@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercert Latam - Certificaciones ISO</title>
+    
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.ico">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Especialistas en certificaciones ISO 9001, ISO 14001, ISO 45001 para empresas constructoras en Cajamarca. 17+ años de experiencia. Solicita una reunión.">
+    <meta name="keywords" content="certificaciones ISO, construcción Cajamarca, ISO 9001, ISO 14001, ISO 45001, calidad construcción, intercert latam, intercert, isos, certificaciones">
+    
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css?v=2.18.0">
+    
+    <!-- Calendly Widget CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <!-- GSAP and SplitText Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    
+</head>
+<body>
+    <div id="root">
+        <!-- Header -->
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center space-x-8">
+                        <a href="#inicio" class="logo-intercert">
+                            <img src="./assets/images/logo-intercert.webp" alt="Intercert Logo" class="h-10 w-auto">
+                        </a>
+                        <nav class="hidden md:flex space-x-6">
+                            <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
+                            <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition-colors">Servicios</a>
+                            <a href="#beneficios" class="text-gray-700 hover:text-blue-600 transition-colors">Beneficios</a>
+                            <a href="#testimonios" class="text-gray-700 hover:text-blue-600 transition-colors">Testimonios</a>
+                            <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors">Contacto</a>
+                        </nav>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="tel:+51986123418" class="hidden md:flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                            <i class="ri-phone-line"></i>
+                            <span>+51 982 432 009</span>
+                        </a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/intercertlatam-support/programa-tu-llamada-clon'});return false;" class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap">Solicita una reunión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Hero Section -->
+        <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
+            <!-- Video Background -->
+            <video 
+                id="heroVideo"
+                class="absolute inset-0 w-full h-full object-cover z-0" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                preload="auto"
+                poster="./assets/images/background.jpg">
+                <source src="./assets/images/video%20caj.mp4?v=2.6.0" type="video/mp4">
+                <!-- Fallback para navegadores que no soportan video -->
+                <div class="hero-bg-fallback"></div>
+            </video>
+            
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-blue-900/80 z-10"></div>
+            
+            <!-- Content -->
+            <div class="container mx-auto px-4 py-20 relative z-20">
+                <div class="max-w-4xl">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 inline-block mb-6">
+                        <span class="text-white text-sm font-medium">✓ Más de 17 años de experiencia</span>
+                    </div>
+                      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                        <span id="hero-title-1">Especialistas en</span>
+                        <span id="hero-title-2"> Certificaciones</span>
+                        <br>
+                        <span id="hero-title-3" class="text-yellow-400">ISO de alta calidad</span>
+                      </h1>
+                    <p id="hero-subtitle" class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl">
+                        Impulsa tu empresa con certificaciones ISO 9001, ISO 14001 e ISO 45001. 
+                        Mejora la calidad, seguridad y gestión ambiental de tus proyectos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/intercertlatam-support/programa-tu-llamada-clon'});return false;" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors whitespace-nowrap inline-flex items-center justify-center">
+                            <i class="ri-calendar-check-line mr-2"></i>
+                            Solicita una reunión
+                        </a>
+                        <a href="#servicios" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors whitespace-nowrap inline-flex items-center justify-center">
+                            <i class="ri-arrow-down-line mr-2"></i>
+                            Ver Servicios
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                            <div class="text-3xl font-bold mb-2">9,000+</div>
+                            <div class="text-white/80">Empresas Certificadas</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                            <div class="text-3xl font-bold mb-2">17+</div>
+                            <div class="text-white/80">Años de Experiencia</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                            <div class="text-3xl font-bold mb-2">100%</div>
+                            <div class="text-white/80">Reconocimiento Internacional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="py-20 bg-gradient-to-br from-blue-50 to-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Conoce Más Sobre Nuestros Servicios
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Descubre cómo las certificaciones ISO pueden transformar tu empresa en Cajamarca 
+                        y llevarte al siguiente nivel de excelencia operacional.
+                    </p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                        <!-- Video container con iframe directo -->
+                        <div class="relative w-full rounded-xl overflow-hidden shadow-xl">
+                            <div class="relative w-full" style="padding-bottom: 56.25%;">
+                                <iframe 
+                                    class="absolute top-0 left-0 w-full h-full rounded-xl"
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/whp3Y7Dozy0?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0&showinfo=0"
+                                    title="INTERCERT - Certificaciones ISO en Cajamarca"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                          
+                        <div class="p-8">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="ri-award-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-gray-900 mb-2">Certificaciones Reconocidas</h4>
+                                    <p class="text-gray-600 text-sm">ISO 9001, 14001, 45001 y 37001 válidas internacionalmente</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="ri-team-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-gray-900 mb-2">Equipo Especializado</h4>
+                                    <p class="text-gray-600 text-sm">Expertos con más de 17 años.</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="ri-map-pin-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-gray-900 mb-2">Presencia Local</h4>
+                                    <p class="text-gray-600 text-sm">Conocimiento profundo del mercado de Cajamarca</p>
+                                </div>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/intercertlatam-support/programa-tu-llamada-clon'});return false;" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors whitespace-nowrap inline-flex items-center">
+                                    <i class="ri-calendar-check-line mr-2"></i>
+                                    Solicita una reunión
+                                </a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16 max-w-6xl mx-auto">
+                        <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                            <div class="text-5xl font-bold text-blue-600 mb-3">
+                                <span class="counter-animate" data-target="9000" data-suffix="+">0</span>
+                            </div>
+                            <div class="text-gray-600 text-lg font-medium">Empresas Certificadas</div>
+                        </div>
+                        <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                            <div class="text-5xl font-bold text-blue-600 mb-3">
+                                <span class="counter-animate" data-target="17" data-suffix="+">0</span>
+                            </div>
+                            <div class="text-gray-600 text-lg font-medium">Años de Experiencia</div>
+                        </div>
+                        <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                            <div class="text-5xl font-bold text-blue-600 mb-3">
+                                <span class="counter-animate" data-target="100" data-suffix="%">0</span>
+                            </div>
+                            <div class="text-gray-600 text-lg font-medium">Éxito en Certificaciones</div>
+                        </div>
+                        <div class="text-center bg-white rounded-xl p-6 shadow-lg">
+                            <div class="text-5xl font-bold text-blue-600 mb-3">
+                                <span class="counter-animate" data-target="24" data-suffix="/7">0</span>
+                            </div>
+                            <div class="text-gray-600 text-lg font-medium">Soporte Técnico</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Certificaciones ISO
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Especialistas en implementar sistemas de gestión que transforman empresas hacia la excelencia operacional.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- ISO 9001 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img alt="ISO 9001 - Gestión de Calidad" 
+                                     class="w-full h-64 md:h-full object-cover" 
+                                     src="./assets/images/iso-9001.jpg">
+                            </div>
+                            <div class="md:w-1/2 p-8">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-award-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900">ISO 9001 - Gestión de Calidad</h3>
+                                </div>
+                                <p class="text-gray-600 mb-6">
+                                    Mejora la calidad de tus procesos y aumenta la satisfacción del cliente.
+                                </p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Reducción de defectos</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Mejora continua</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Mayor competitividad</span>
+                                    </div>
+                                </div>
+                                <a href="#contacto" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                                    Solicitar Información
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISO 14001 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img alt="ISO 14001 - Gestión Ambiental" 
+                                     class="w-full h-64 md:h-full object-cover" 
+                                     src="./assets/images/iso-14001.jpg">
+                            </div>
+                            <div class="md:w-1/2 p-8">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-leaf-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900">ISO 14001 - Gestión Ambiental</h3>
+                                </div>
+                                <p class="text-gray-600 mb-6">
+                                    Implementa prácticas sostenibles y cumple con regulaciones ambientales.
+                                </p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Reducción de impacto ambiental</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Cumplimiento legal</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Imagen corporativa</span>
+                                    </div>
+                                </div>
+                                <a href="#contacto" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                                    Solicitar Información
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISO 45001 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img alt="ISO 45001 - Seguridad Ocupacional" 
+                                     class="w-full h-64 md:h-full object-cover" 
+                                     src="./assets/images/iso-45001.jpg">
+                            </div>
+                            <div class="md:w-1/2 p-8">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-shield-check-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900">ISO 45001 - Seguridad Ocupacional</h3>
+                                </div>
+                                <p class="text-gray-600 mb-6">
+                                    Protege a tus trabajadores y reduce accidentes laborales en obra.
+                                </p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Cero accidentes</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Cumplimiento normativo</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Productividad mejorada</span>
+                                    </div>
+                                </div>
+                                <a href="#contacto" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                                    Solicitar Información
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISO 37001 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img alt="ISO 37001 - Gestión Antisoborno" 
+                                     class="w-full h-64 md:h-full object-cover" 
+                                     src="./assets/images/iso-37001.jpg">
+                            </div>
+                            <div class="md:w-1/2 p-8">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-shield-user-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900">ISO 37001 - Gestión Antisoborno</h3>
+                                </div>
+                                <p class="text-gray-600 mb-6">
+                                    Fortalece la transparencia y ética en tus procesos de contratación.
+                                </p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Transparencia total</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Confianza del cliente</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="ri-check-line text-green-500 mr-2"></i>
+                                        <span class="text-sm text-gray-700">Cumplimiento legal</span>
+                                    </div>
+                                </div>
+                                <a href="#contacto" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                                    Solicitar Información
+                                    <i class="ri-arrow-right-line ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/intercertlatam-support/programa-tu-llamada-clon'});return false;" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors whitespace-nowrap inline-flex items-center">
+                        <i class="ri-calendar-check-line mr-2"></i>
+                        Solicita una reunión
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="beneficios" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        ¿Por Qué Elegir Certificaciones ISO?
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Las empresas certificadas experimentan mejoras significativas 
+                        en competitividad, eficiencia y rentabilidad.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
+                            <i class="ri-trophy-line text-3xl text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Ventaja Competitiva</h3>
+                        <p class="text-gray-600">
+                            Destaca en licitaciones públicas y privadas con certificaciones reconocidas internacionalmente.
+                        </p>
+                    </div>
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
+                            <i class="ri-money-dollar-circle-line text-3xl text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Reducción de Costos</h3>
+                        <p class="text-gray-600">
+                            Optimiza procesos, reduce desperdicios y mejora la eficiencia operacional hasta un 30%.
+                        </p>
+                    </div>
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
+                            <i class="ri-team-line text-3xl text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Mejor Gestión de Personal</h3>
+                        <p class="text-gray-600">
+                            Implementa sistemas que mejoran la productividad y satisfacción de tus trabajadores.
+                        </p>
+                    </div>
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
+                            <i class="ri-shield-check-line text-3xl text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Cumplimiento Legal</h3>
+                        <p class="text-gray-600">
+                            Asegura el cumplimiento de todas las normativas locales e internacionales.
+                        </p>
+                    </div>
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
+                            <i class="ri-customer-service-2-line text-3xl text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Satisfacción del Cliente</h3>
+                        <p class="text-gray-600">
+                            Entrega proyectos de mayor calidad y en los tiempos establecidos.
+                        </p>
+                    </div>
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
+                            <i class="ri-global-line text-3xl text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Reconocimiento Internacional</h3>
+                        <p class="text-gray-600">
+                            Accede a mercados internacionales con certificaciones válidas globalmente.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-white">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-3xl md:text-4xl font-bold mb-6">
+                                Empresas que Confían en Nosotros
+                            </h3>
+                            <p class="text-xl text-blue-100 mb-8">
+                                Únete a las empresas líderes que ya han transformado sus operaciones con nuestras 
+                                certificaciones ISO.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#contacto" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap inline-flex items-center justify-center">
+                                    <i class="ri-phone-line mr-2"></i>
+                                    Llamar Ahora
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=51986123418&text=Hola,%20necesito%20información%20sobre%20certificaciones%20ISO%20para%20construcción%20en%20Cajamarca" 
+                                   target="_blank" rel="noopener noreferrer" 
+                                   class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors whitespace-nowrap inline-flex items-center justify-center">
+                                    <i class="ri-whatsapp-line mr-2"></i>
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <!-- Carrusel de empresas -->
+                            <div class="carousel-container relative overflow-hidden rounded-lg shadow-lg bg-gray-100 w-full max-w-4xl mx-auto">
+                                <div class="carousel-track flex transition-transform duration-1000 ease-in-out" id="empresasCarousel" style="width: 400%;">
+                                    <!-- Slide 1: Panada Autos -->
+                                    <div class="carousel-slide flex items-center justify-center bg-white" style="width: 25%; height: 400px;">
+                                        <img alt="Panada Autos - Empresa certificada" 
+                                             class="max-w-full max-h-full object-contain" 
+                                             src="assets/images/PanadaAutos.jpeg">
+                                    </div>
+                                    
+                                    <!-- Slide 2: Prosevig SAC -->
+                                    <div class="carousel-slide flex items-center justify-center bg-white" style="width: 25%; height: 400px;">
+                                        <img alt="Prosevig SAC - Empresa certificada" 
+                                             class="max-w-full max-h-full object-contain" 
+                                             src="assets/images/ProsevigSAC.jpeg">
+                                    </div>
+
+                                    <!-- Slide 3: INVA -->
+                                    <div class="carousel-slide flex items-center justify-center bg-white" style="width: 25%; height: 400px;">
+                                        <img alt="INVA - Empresa certificada" 
+                                             class="max-w-full max-h-full object-contain" 
+                                             src="assets/images/INVA.jpg">
+                                    </div>
+                                    
+                                    <!-- Slide 4: Migraciones -->
+                                    <div class="carousel-slide flex items-center justify-center bg-white" style="width: 25%; height: 400px;">
+                                        <img alt="Migraciones - Empresa certificada" 
+                                             class="max-w-full max-h-full object-contain" 
+                                             src="assets/images/MIGRACIONES.webp">
+                                    </div>
+                                </div>
+                                
+                                <!-- Controles del carrusel -->
+                                <button class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-black/20 text-white rounded-full p-3 transition-all duration-200 z-30" onclick="changeSlide(-1)">
+                                    <i class="ri-arrow-drop-left-line text-3xl"></i>
+                                </button>
+                                <button class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-black/20 text-white rounded-full p-3 transition-all duration-200 z-30" onclick="changeSlide(1)">
+                                    <i class="ri-arrow-drop-right-line text-3xl"></i>
+                                </button>
+                                
+                                <!-- Indicadores -->
+                                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200" onclick="currentSlide(1)"></button>
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200" onclick="currentSlide(2)"></button>
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200" onclick="currentSlide(3)"></button>
+                                    <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200" onclick="currentSlide(4)"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Lo Que Dicen Nuestros Clientes
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Empresas líderes han transformado sus operaciones con nuestras 
+                        certificaciones ISO especializadas.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex items-center mb-6">
+                            <img alt="Carlos Mendoza" 
+                                 class="w-16 h-16 rounded-full object-cover mr-4" 
+                                 src="./assets/images/testimonial-1.jpg">
+                            <div>
+                                <h4 class="font-bold text-gray-900">Carlos Mendoza</h4>
+                                <p class="text-sm text-gray-600">Gerente General</p>
+                                <p class="text-sm text-blue-600 font-semibold">Constructora Andes SAC</p>
+                                <p class="text-xs text-gray-500">Cajamarca</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Gracias a Intercert obtuvimos la certificación ISO 9001 que nos permitió ganar la licitación 
+                            más importante del año. El proceso fue profesional y el equipo muy capacitado."
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex items-center mb-6">
+                            <img alt="María Elena Vásquez" 
+                                 class="w-16 h-16 rounded-full object-cover mr-4" 
+                                 src="./assets/images/testimonial-2.jpg">
+                            <div>
+                                <h4 class="font-bold text-gray-900">María Elena Vásquez</h4>
+                                <p class="text-sm text-gray-600">Directora de Operaciones</p>
+                                <p class="text-sm text-blue-600 font-semibold">Ingeniería y Construcción Norte</p>
+                                <p class="text-xs text-gray-500">Cajamarca</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "La implementación de ISO 45001 redujo nuestros accidentes laborales a cero. El equipo de 
+                            Intercert nos acompañó en cada paso del proceso de certificación."
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex items-center mb-6">
+                            <img alt="Roberto Chávez" 
+                                 class="w-16 h-16 rounded-full object-cover mr-4" 
+                                 src="./assets/images/testimonial-3.jpg">
+                            <div>
+                                <h4 class="font-bold text-gray-900">Roberto Chávez</h4>
+                                <p class="text-sm text-gray-600">Jefe de Calidad</p>
+                                <p class="text-sm text-blue-600 font-semibold">Constructora Cajamarca Moderna</p>
+                                <p class="text-xs text-gray-500">Cajamarca</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Con ISO 14001 mejoramos significativamente nuestro impacto ambiental. Ahora somos referente 
+                            en construcción sostenible en la región. Excelente servicio de Intercert."
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-blue-600 rounded-2xl p-8 md:p-12 text-white text-center">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">
+                        ¿Listo para Certificar tu Empresa?
+                    </h3>
+                    <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                        Únete a las empresas más exitosas. Solicita una reunión 
+                        y descubre cómo las certificaciones ISO pueden transformar tu negocio.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/intercertlatam-support/programa-tu-llamada-clon'});return false;" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors whitespace-nowrap inline-flex items-center justify-center">
+                            <i class="ri-calendar-check-line mr-2"></i>
+                            Solicita una reunión
+                        </a>
+                        <a href="tel:+51986123418" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors whitespace-nowrap inline-flex items-center justify-center">
+                            <i class="ri-phone-line mr-2"></i>
+                            Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Contáctanos</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Nuestros expertos en certificaciones ISO están listos para ayudarte en Cajamarca.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white mb-8">
+                            <h3 class="text-2xl font-bold mb-6">¿Por Qué Elegir Intercert?</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="ri-check-double-line text-yellow-400 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">17+ Años de Experiencia</h4>
+                                        <p class="text-blue-100 text-sm">Especialistas reconocidos internacionalmente</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="ri-award-line text-yellow-400 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Certificaciones Reconocidas</h4>
+                                        <p class="text-blue-100 text-sm">Válidas en todo el mundo</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="ri-team-line text-yellow-400 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Equipo Especializado</h4>
+                                        <p class="text-blue-100 text-sm">Expertos en diferentes sectores</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="ri-map-pin-line text-yellow-400 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Presencia en Cajamarca</h4>
+                                        <p class="text-blue-100 text-sm">Conocemos el mercado local</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="ri-phone-line text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Teléfono</h4>
+                                    <p class="text-gray-600">+51 986 123 418</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="ri-mail-line text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600">info@intercertlatam.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="ri-map-pin-line text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Ubicación</h4>
+                                    <p class="text-gray-600">Jr. José Sabogal 1296, Cajamarca 06001, Perú</p>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <a href="https://api.whatsapp.com/send?phone=51986123418&text=Hola,%20necesito%20información%20sobre%20certificaciones%20ISO%20para%20construcción%20en%20Cajamarca" 
+                                   target="_blank" rel="noopener noreferrer" 
+                                   class="w-full bg-green-500 text-white px-6 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors inline-flex items-center justify-center">
+                                    <i class="ri-whatsapp-line text-2xl mr-3"></i>
+                                    Contactar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8">
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="ri-chat-3-line text-4xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">¿Necesitas Información?</h3>
+                            <p class="text-gray-600 mb-8">
+                                Utiliza nuestro formulario de contacto para solicitar una reunión o 
+                                contáctanos directamente por WhatsApp.
+                            </p>
+                            <div class="space-y-4">
+                                <button onclick="openContactForm()" class="w-full bg-blue-600 text-white px-6 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center">
+                                    <i class="ri-form-line mr-2"></i>
+                                    Abrir Formulario de Contacto
+                                </button>
+                                <a href="tel:+51986123418" class="w-full border-2 border-blue-600 text-blue-600 px-6 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors inline-flex items-center justify-center">
+                                    <i class="ri-phone-line mr-2"></i>
+                                    Llamar Ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="col-span-1 md:col-span-2">
+                        <img src="./assets/images/logo-white.png?v=2.4.0" alt="Intercert Cajamarca" class="h-12 w-auto mb-4 logo-intercert">
+                        <p class="text-gray-300 mb-6 max-w-md">
+                            Especialistas en certificaciones ISO. 
+                            Más de 17 años transformando empresas hacia la excelencia operacional.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://api.whatsapp.com/send?phone=51986123418" 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                <i class="ri-whatsapp-line text-xl"></i>
+                            </a>
+                            <a href="tel:+51986123418" 
+                               class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                                <i class="ri-phone-line text-xl"></i>
+                            </a>
+                            <a href="mailto:info@intercertlatam.com" 
+                               class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                                <i class="ri-mail-line text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#servicios" class="hover:text-white transition-colors">ISO 9001 - Calidad</a></li>
+                            <li><a href="#servicios" class="hover:text-white transition-colors">ISO 14001 - Ambiental</a></li>
+                            <li><a href="#servicios" class="hover:text-white transition-colors">ISO 45001 - Seguridad</a></li>
+                            <li><a href="#servicios" class="hover:text-white transition-colors">ISO 37001 - Antisoborno</a></li>
+                            <li><a href="#contacto" class="hover:text-white transition-colors">Consultoría Especializada</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                        <div class="space-y-3 text-gray-300">
+                            <div class="flex items-center">
+                                <i class="ri-phone-line mr-2"></i>
+                                <span>+51 986 123 418</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-mail-line mr-2"></i>
+                                <span>info@intercertlatam.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-map-pin-line mr-2"></i>
+                                <span>Jr. José Sabogal 1296, Cajamarca 06001, Perú</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-time-line mr-2"></i>
+                                <span>Lun - Vie: 9:00 AM - 5:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>© 2024 Intercert Cajamarca. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Chat Button -->
+        <button onclick="openContactForm()" class="fixed bottom-6 right-6 bg-yellow-500 text-black px-4 py-3 rounded-full shadow-lg hover:bg-yellow-400 transition-colors z-50 flex items-center justify-center hover:scale-110 whitespace-nowrap" style="background-color: #fbbf24 !important;">
+            <i class="ri-trophy-line text-lg mr-2"></i>
+            <span class="text-sm font-bold">¡¡Gana con nosotros!!</span>
+        </button>
+
+
+        <!-- Contact Form Modal -->
+        <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+            <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Solicita una reunión</h3>
+                        <button onclick="closeContactForm()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="form-container">
+                        <div class="steps-indicator">
+                            <div class="step active">
+                                <div class="step-number">1</div>
+                                <span>Contacto</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <span>Empresa</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <span>Certificación</span>
+                            </div>
+                        </div>
+                        
+                        <form id="certificationForm">
+                            <div class="form-steps-container">
+                                <!-- Paso 1: Contacto -->
+                                <div id="step1" class="form-step active">
+                                    <div class="form-group">
+                                        <label class="form-label">Nombre completo</label>
+                                        <input type="text" name="nombre_completo" class="form-input" placeholder="Ingrese su nombre completo" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Correo electrónico</label>
+                                        <input type="email" name="email" class="form-input" placeholder="ejemplo@empresa.com" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Teléfono</label>
+                                        <div class="phone-input-container">
+                                            <select name="pais_prefijo" id="pais_prefijo" class="form-select" required>
+                                                <option value="">País</option>
+                                                <option value="+51" data-country="PE">🇵🇪 (+51)</option>
+                                                <option value="+1" data-country="US">🇺🇸 (+1)</option>
+                                                <option value="+52" data-country="MX">🇲🇽 (+52)</option>
+                                                <option value="+54" data-country="AR">🇦🇷 (+54)</option>
+                                                <option value="+57" data-country="CO">🇨🇴 (+57)</option>
+                                                <option value="+34" data-country="ES">🇪🇸 (+34)</option>
+                                            </select>
+                                            <input type="tel" name="telefono" class="form-input" placeholder="999 999 999" pattern="[0-9\s]+" inputmode="numeric" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Cargo en la empresa</label>
+                                        <input type="text" name="cargo" class="form-input" placeholder="Gerente, Director, etc." required>
+                                    </div>
+                                </div>
+
+                                <!-- Paso 2: Empresa -->
+                                <div id="step2" class="form-step">
+                                    <div class="form-group">
+                                        <label class="form-label">Razón social de la empresa</label>
+                                        <input type="text" name="nombre_empresa" class="form-input" placeholder="¿Cuál es la razón social de su empresa?" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">RUC de la empresa</label>
+                                        <input type="text" name="ruc_empresa" class="form-input" placeholder="Ingrese el RUC de su empresa" pattern="[0-9]+" inputmode="numeric" maxlength="11" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Número de empleados</label>
+                                        <input type="number" name="numero_empleados" class="form-input" placeholder="Digite el número de colaboradores" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Sector de la empresa</label>
+                                        <select name="sector_empresa" class="form-input" required>
+                                            <option value="">Seleccione el sector</option>
+                                            <option value="Construccion">Construcción</option>
+                                            <option value="Manufactura">Manufactura</option>
+                                            <option value="Servicios">Servicios</option>
+                                            <option value="Tecnologia">Tecnología</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Paso 3: Certificación -->
+                                <div id="step3" class="form-step">
+                                    <div class="form-group">
+                                        <label class="form-label">Tipo de servicio</label>
+                                        <select name="tipo_servicio" class="form-input" required>
+                                            <option value="">Seleccione el tipo de servicio</option>
+                                            <option value="Certificación Inicial">Certificación Inicial</option>
+                                            <option value="Seguimiento 1">Seguimiento 1</option>
+                                            <option value="Seguimiento 2">Seguimiento 2</option>
+                                            <option value="Recertificación">Recertificación</option>
+                                            <option value="Cambio">Cambio</option>
+                                            <option value="Transferencia">Transferencia</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Certificación ISO requerida</label>
+                                        <div class="certifications-grid">
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO9001" id="ISO9001">
+                                                <label for="ISO9001">ISO 9001:2015 - Sistema de gestión de calidad</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO13485" id="ISO13485">
+                                                <label for="ISO13485">ISO 13485:2016 - Sistema de gestión de calidad para dispositivos médicos</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO14001" id="ISO14001">
+                                                <label for="ISO14001">ISO 14001:2015 - Sistema de gestión ambiental</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO20001" id="ISO20001">
+                                                <label for="ISO20001">ISO 20001:2018 - Gestión de servicios de TI</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO22000" id="ISO22000">
+                                                <label for="ISO22000">ISO 22000:2018 - Gestión de seguridad alimentaria</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO22301" id="ISO22301">
+                                                <label for="ISO22301">ISO 22301:2019 - Sistema de gestión de continuidad del negocio</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO26000" id="ISO26000">
+                                                <label for="ISO26000">ISO 26000:2010 - Responsabilidad social</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO27001" id="ISO27001">
+                                                <label for="ISO27001">ISO 27001:2022 - Sistema de gestión de seguridad de la información</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO27701" id="ISO27701">
+                                                <label for="ISO27701">ISO 27701:2019 - Sistema de gestión de privacidad de datos</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO31001" id="ISO31001">
+                                                <label for="ISO31001">ISO 31001:2018 - Gestión de riesgos</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO37001" id="ISO37001">
+                                                <label for="ISO37001">ISO 37001:2016 - Sistema de gestión antisoborno</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO39001" id="ISO39001">
+                                                <label for="ISO39001">ISO 39001:2013 - Gestión de seguridad vial</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO45001" id="ISO45001">
+                                                <label for="ISO45001">ISO 45001:2018 - Sistema de gestión de seguridad y salud ocupacional</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO50001" id="ISO50001">
+                                                <label for="ISO50001">ISO 50001:2018 - Sistema de gestión energética</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO28000" id="ISO28000">
+                                                <label for="ISO28000">ISO 28000:2007 - Sistema de gestión de seguridad de la cadena de suministro</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO56002" id="ISO56002">
+                                                <label for="ISO56002">ISO 56002:2019 - Gestión de innovación</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO22005" id="ISO22005">
+                                                <label for="ISO22005">ISO 22005:2007 - Trazabilidad en la cadena alimentaria</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO10002" id="ISO10002">
+                                                <label for="ISO10002">ISO 10002:2018 - Gestión de satisfacción del cliente</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO90003" id="ISO90003">
+                                                <label for="ISO90003">ISO 90003:2018 - Sistema de gestión de calidad en desarrollo de software</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO2382" id="ISO2382">
+                                                <label for="ISO2382">ISO/IEC 2382:2015 - Vocabulario de tecnología de la información (incluye IA)</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO29119" id="ISO29119">
+                                                <label for="ISO29119">ISO/IEC 29119 - Estándares de pruebas de software</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO17025" id="ISO17025">
+                                                <label for="ISO17025">ISO 17025:2017 - Requisitos para acreditación de laboratorios de ensayo y calibración</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO17021" id="ISO17021">
+                                                <label for="ISO17021">ISO 17021:2015 - Requisitos para acreditación de organismos de certificación de sistemas de gestión</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO17020" id="ISO17020">
+                                                <label for="ISO17020">ISO 17020:2012 - Requisitos para competencia de organismos de inspección</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="ISO21001" id="ISO21001">
+                                                <label for="ISO21001">ISO 21001:2018 - Sistema de gestión para organizaciones educativas</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="HACCP" id="HACCP">
+                                                <label for="HACCP">HACCP - Sistema de análisis de peligros y puntos críticos de control</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="BPM" id="BPM">
+                                                <label for="BPM">BPM - Buenas prácticas de manufactura</label>
+                                            </div>
+                                            <div class="certification-item">
+                                                <input type="checkbox" name="certificaciones[]" value="BPA" id="BPA">
+                                                <label for="BPA">BPA - Buenas prácticas de almacenamiento</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Comentarios adicionales</label>
+                                        <textarea name="comentarios" class="form-input form-textarea" placeholder="Cuéntanos más sobre tus necesidades específicas"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-buttons">
+                                <button type="button" class="btn-back" onclick="previousStep()" style="display: none;">VOLVER</button>
+                                <button type="button" class="btn-continue" onclick="nextStep()">CONTINUAR</button>
+                                <button type="submit" class="btn-submit" style="display: none;">ENVIAR SOLICITUD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly Widget JavaScript -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js?v=2.20.0"></script>
+    
+    <!-- Carrusel JavaScript -->
+    <script>
+        let currentSlideIndex = 0;
+        const totalSlides = 4;
+        let carouselInterval;
+        let isAutoplayActive = true;
+
+        function showSlide(index) {
+            const carousel = document.getElementById('empresasCarousel');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            if (carousel) {
+                carousel.style.transform = `translateX(-${index * 25}%)`;
+                
+                // Actualizar indicadores
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('bg-white', i === index);
+                    dot.classList.toggle('bg-white/50', i !== index);
+                });
+                
+                currentSlideIndex = index;
+            }
+        }
+
+        function nextSlide() {
+            const newIndex = (currentSlideIndex + 1) % totalSlides;
+            showSlide(newIndex);
+        }
+
+        function changeSlide(direction) {
+            const newIndex = currentSlideIndex + direction;
+            
+            if (newIndex >= totalSlides) {
+                showSlide(0);
+            } else if (newIndex < 0) {
+                showSlide(totalSlides - 1);
+            } else {
+                showSlide(newIndex);
+            }
+            
+            // Reiniciar autoplay
+            resetAutoplay();
+        }
+
+        function currentSlide(index) {
+            showSlide(index - 1);
+            resetAutoplay();
+        }
+
+        function resetAutoplay() {
+            if (isAutoplayActive) {
+                clearInterval(carouselInterval);
+                carouselInterval = setInterval(() => {
+                    nextSlide();
+                }, 4000); // Cambia cada 4 segundos
+            }
+        }
+
+        function startAutoplay() {
+            isAutoplayActive = true;
+            carouselInterval = setInterval(() => {
+                nextSlide();
+            }, 4000); // Cambia cada 4 segundos
+        }
+
+        function stopAutoplay() {
+            isAutoplayActive = false;
+            clearInterval(carouselInterval);
+        }
+
+        // Inicializar carrusel cuando se carga la página
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(0);
+            startAutoplay();
+            
+            // Pausar autoplay al hacer hover
+            const carouselContainer = document.querySelector('.carousel-container');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('mouseenter', () => {
+                    stopAutoplay();
+                });
+                
+                carouselContainer.addEventListener('mouseleave', () => {
+                    startAutoplay();
+                });
+            }
+            
+            // Inicializar animaciones de contadores
+            if (typeof initCounterAnimations === 'function') {
+                initCounterAnimations();
+            }
+        });
+    </script>
+    
+    <!-- Video Modal JavaScript -->
+    <script>
+        function playVideo() {
+            const modal = document.getElementById('videoModal');
+            const player = document.getElementById('videoPlayer');
+            
+            // Cargar el video de YouTube
+            player.src = 'https://www.youtube.com/embed/whp3Y7Dozy0?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0';
+            
+            // Mostrar el modal
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Prevenir scroll del body
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeVideo() {
+            const modal = document.getElementById('videoModal');
+            const player = document.getElementById('videoPlayer');
+            
+            // Ocultar el modal
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            
+            // Detener el video
+            player.src = '';
+            
+            // Restaurar scroll del body
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Cerrar modal al hacer clic fuera del video
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideo();
+            }
+        });
+        
+        // Cerrar modal con tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeVideo();
+            }
+        });
+    </script>
+    
+    <!-- Calendly Integration - Solo enlaces directos -->
+</body>
+</html>
